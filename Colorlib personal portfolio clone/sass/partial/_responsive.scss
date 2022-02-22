@@ -1,0 +1,185 @@
+// 1150px size
+@media screen and (max-width: 1150px) {
+   .main-banner {
+      justify-content: space-evenly;
+      .left-banner-section {
+         h1 {
+            font-size: 2.5rem;
+         }
+      }
+   }
+}
+// 1100px size
+@media screen and (max-width: 1100px) {
+   .banner-section-2 {
+      .right-banner-section-2 {
+         margin: 0;
+         .right-banner-h1 {
+            font-size: 1.5rem;
+         }
+      }
+   }
+   .service-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+   }
+}
+// 1050px
+@media screen and (max-width: 1050px) {
+   .prices {
+      flex-wrap: wrap;
+   }
+}
+// 950px
+@media screen and (max-width: 950px) {
+   nav {
+      .checkbtn {
+         display: block;
+      }
+      ul {
+         width: 40vw;
+         height: 100vh;
+         @include d-flex(flex-start, flex-start, column);
+         padding: 20px;
+         position: absolute;
+         left: -110%;
+         background-color: $bg_responsive_mobile_menu;
+         li {
+            width: 100%;
+            a {
+               display: inline-block;
+               width: inherit;
+               color: $color_responsive_mobile_menu;
+               position: relative;
+               .fully-right {
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+               }
+            }
+         }
+      }
+      #check:checked ~ ul {
+         position: absolute;
+         top: 100%;
+         left: 0;
+      }
+   }
+   .partner-body {
+      padding: 50px;
+      flex-direction: column;
+      height: max-content;
+      img {
+         padding: 20px;
+      }
+   }
+}
+// 900px
+@media screen and (max-width: 900px) {
+   .banner-section {
+      margin: 0;
+   }
+   .main-banner {
+      @include d-flex(space-evenly, center, column);
+      .left-banner-section,
+      .right-banner-section {
+         flex-basis: 100%;
+         img {
+            max-width: 70%;
+         }
+      }
+   }
+   .banner-section-2 {
+      @include d-flex(space-evenly, center, column);
+      .left-banner-section-2,
+      .right-banner-section-2 {
+         flex-basis: 100%;
+         img {
+            max-width: 100%;
+         }
+      }
+   }
+   .service-header {
+      max-width: 100%;
+   }
+   .service-grid {
+      grid-template-columns: 1fr;
+   }
+   .counter-body {
+      @include d-flex(center, center, column);
+      height: 600px;
+      .c-list {
+         padding: 20px;
+      }
+   }
+   .image-row {
+      @include d-flex(space-between, center, column);
+   }
+   .arrow {
+      top: 102%;
+      left: 50%;
+      right: 0;
+      flex-direction: row;
+      transform: translateX(-50%);
+      width: max-content;
+   }
+   .f-body {
+      flex-wrap: wrap;
+      .now {
+         flex-basis: 45%;
+         margin-bottom: 50px;
+      }
+   }
+   .f-icons {
+      width: 150px;
+   }
+}
+// 800px
+@media screen and (max-width: 800px) {
+   .container {
+      width: 70%;
+   }
+   .service-header {
+      max-width: 100%;
+   }
+   .clients_Info {
+      flex-wrap: wrap;
+      .client {
+         width: 100%;
+      }
+   }
+   .post-box {
+      flex-direction: column;
+      .box {
+         width: 100%;
+      }
+   }
+   .about-me {
+      h3 {
+         margin-bottom: 5px;
+      }
+      p {
+         margin: 5px 0;
+      }
+   }
+   .follow {
+      margin-top: 20px;
+   }
+}
+// 750px
+@media screen and (max-width: 750px) {
+   .prices {
+      .price {
+         width: 100%;
+      }
+   }
+}
+// 650px
+@media screen and (max-width: 650px) {
+   .f-body {
+      flex-direction: column;
+      .now {
+         width: 100%;
+      }
+   }
+}

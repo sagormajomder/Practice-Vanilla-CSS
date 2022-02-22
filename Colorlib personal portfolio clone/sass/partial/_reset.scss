@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+*::selection {
+   background-color: $color-primary;
+   color: $color-selection;
+}
+body {
+   font-family: $base-font;
+   background-color: $color-secondary;
+   overflow-x: hidden;
+   width: 100vw;
+   height: 100vh;
+}
+a {
+   text-decoration: none;
+   outline: none;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.drop {
+   border-radius: 0 0 5px 5px;
+   background-color: #fff;
+   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1);
+   @include d-flex(center, flex-start, column);
+   position: absolute;
+   width: 180px;
+   padding: 5px 5px;
+   transition: 0.3s;
+}
+.btn {
+   display: inline-block;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   @include font-weights(medium);
+   background-image: $gradient;
+   padding: 10px 20px;
+   color: white;
+   font-size: 0.9rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.btn:hover {
+   box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
+}
+section {
+   padding: 60px 0 0 0;
+}

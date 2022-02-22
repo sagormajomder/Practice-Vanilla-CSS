@@ -1,0 +1,281 @@
+:root {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 200vh;
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box-shadow, #header-area, .search-container .search-area {
+  -webkit-box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+          box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+}
+
+#header-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(60deg, #ff512f, #dd2476);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+/* Logo CSS */
+#logo {
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px 3vw;
+  padding-left: 5vw;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+#logo a img {
+  max-width: 150px;
+}
+
+/* Main Menu CSS */
+#main-menu {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 0 2vw;
+  height: 65px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* First Dropdown */
+}
+
+#main-menu li {
+  position: relative;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 0;
+}
+
+#main-menu li:hover #dropdown-1 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+#main-menu li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+#main-menu li a::after {
+  position: absolute;
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#main-menu li:hover > a::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#main-menu #dropdown-1 {
+  position: absolute;
+  background: linear-gradient(60deg, #ff512f, #dd2476);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+          box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+  top: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0 0 5px 5px;
+  width: 150px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#main-menu #dropdown-1 li {
+  padding: 13px 20px;
+  position: relative;
+}
+
+#main-menu #dropdown-1 li:hover #dropdown-2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+#main-menu #dropdown-1 #dropdown-2 {
+  position: absolute;
+  background: linear-gradient(60deg, #ff512f, #dd2476);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+          box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+  top: 0;
+  right: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  width: 150px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.fa-caret-down {
+  color: white;
+  padding-left: 4px;
+}
+
+.search-container {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding: 0 2vw;
+}
+
+.search-container .search-area {
+  max-width: 175px;
+  min-width: 150px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+  border: 1px solid rgba(167, 158, 245, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+}
+
+.search-container .search-area input {
+  max-width: 115px;
+  min-width: 95px;
+  border: none;
+  outline: none;
+  color: #1f1f1f;
+  font-size: 1rem;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.search-container .search-area input::-webkit-input-placeholder {
+  color: #1d1d1d;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.search-container .search-area input:-ms-input-placeholder {
+  color: #1d1d1d;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.search-container .search-area input::-ms-input-placeholder {
+  color: #1d1d1d;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.search-container .search-area input::placeholder {
+  color: #1d1d1d;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}

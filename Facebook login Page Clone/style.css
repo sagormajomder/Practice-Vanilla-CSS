@@ -1,0 +1,253 @@
+:root {
+   --body-color: #f0f2f5;
+   --primary-color: #1877f2;
+   --secondary-color: #8a8d91;
+}
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   box-sizing: border-box;
+}
+body {
+   width: 100vw;
+   font-family: Helvetica, Arial, sans-serif;
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+img {
+   max-width: 100%;
+}
+a {
+   text-decoration: none;
+}
+main {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   margin-bottom: 20px;
+   background: var(--body-color);
+}
+/* Left Side Design */
+#left,
+#right {
+   height: inherit;
+   flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#left {
+   margin-top: -70px;
+}
+#left-fixed,
+#right-fixed {
+   max-width: max-content;
+   margin: auto;
+}
+#left-content {
+   font-size: 1.3rem;
+}
+#left-content img {
+   width: 200px;
+}
+#left-content h2,
+#left-content p {
+   color: gray;
+   margin-left: 20px;
+   padding: 5px 0;
+}
+#cards {
+   display: flex;
+}
+.card {
+   flex-grow: 1;
+   width: 200px;
+   height: 240px;
+   text-align: center;
+   position: relative;
+   margin: 20px;
+   transition: 0.5s;
+   cursor: pointer;
+   border-radius: 20px;
+   background-color: #fff;
+}
+.card:hover {
+   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.075);
+}
+.card-cancel {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 5px;
+   top: 5px;
+   font-size: 1rem;
+   border-radius: 50%;
+   color: white;
+   background-color: #8d918ad3;
+   transition: 0.2s;
+}
+.card:hover .card-cancel {
+   color: black;
+   background-color: white;
+   transform: translate(-7px, -5px) scale(1.6);
+}
+.card-notifications {
+   font-size: 0.8rem;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   top: -5px;
+   right: -7px;
+   border-radius: 50%;
+   color: white;
+   background-color: red;
+}
+.card-img1 {
+   height: 190px;
+   background: url("https://i.ibb.co/gJ0HsDY/profile-pic.jpg") top center/cover;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.card-img2 {
+   height: 190px;
+   background: url("https://i.ibb.co/NxH9k4P/iphone.jpg") top center/cover;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.card-username {
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: var(--secondary-color);
+   padding: 0.8rem;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+/* Righ Side Design */
+#right {
+   text-align: center;
+}
+#form {
+   background-color: white;
+   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.075);
+   padding: 1rem 1.3rem;
+   border-radius: 10px;
+   width: 500px;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+form {
+   display: flex;
+   flex-flow: column;
+}
+#form input {
+   font-family: inherit;
+   font-size: 1.3rem;
+   font-weight: 300;
+   color: #1d2129;
+   height: 70px;
+   padding: 5px 20px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   border: 0.5px solid lightgray;
+}
+.p-button {
+   width: 100%;
+   border: none;
+   padding: 18px;
+   font-size: 1.4rem;
+   border-radius: 10px;
+}
+#form-content {
+   margin-top: 8px;
+   text-align: center;
+}
+#form-content p {
+   font-size: 1.2rem;
+   color: var(--primary-color);
+   margin: 22px;
+}
+hr {
+   background: gray;
+}
+.log-b {
+   color: white;
+   background-color: var(--primary-color);
+}
+.new-b {
+   color: white;
+   width: 60%;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   background-color: #42b72a;
+}
+.lp {
+   font-size: 1.1rem;
+   color: rgba(3, 3, 3, 0.807);
+}
+.lp span {
+   color: black;
+   font-weight: bold;
+}
+/* Footer Style */
+footer {
+   height: 100%;
+}
+#footer-fixed {
+   max-width: 70vw;
+   margin: 30px auto;
+}
+#row1 {
+   margin: 15px 0;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   align-items: center;
+}
+#row1 a,
+#row2 a {
+   margin-right: 15px;
+   color: var(--secondary-color);
+   line-height: 1.8rem;
+}
+#selected {
+   color: rgba(0, 0, 0, 0.568) !important;
+}
+.last-b {
+   width: 40px;
+   height: 30px;
+   line-height: 28px;
+   font-size: 1.6rem;
+   margin-left: 8px;
+   border: 0.5px solid lightgray;
+   border-radius: 5px;
+}
+#row2 {
+   margin-top: 10px;
+}
+.last-p {
+   margin-top: 50px;
+   margin-bottom: 30px;
+   font-size: 0.9rem;
+   color: #8a8d91;
+}
+@media screen and (max-width: 1100px) {
+   main {
+      flex-direction: column;
+      height: max-content;
+      padding-bottom: 20vh;
+   }
+   #left,
+   #right {
+      height: 65vh;
+      margin: auto;
+   }
+   #left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
