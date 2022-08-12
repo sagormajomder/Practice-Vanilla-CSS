@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #696969;
+}
+a:link {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+section {
+  margin-bottom: 150px;
+}
+.container {
+  width: 85vw;
+  margin: auto;
+}
+/* Introduction Section ==================================================== */
+.introduction {
+  background: url(../img/top-banner.png) no-repeat;
+}
+.top-banner,
+.dream-banner {
+  display: flex;
+  gap: 30px;
+}
+.text-field,
+.image-field {
+  flex: 1 1 40%;
+}
+
+.text-field {
+  margin-top: 50px;
+}
+.text-field h1 {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  color: #000000;
+  font-weight: 500;
+}
+.text-field span {
+  display: inline-block;
+}
+.text-field h1 .we {
+  margin-bottom: 50px;
+}
+.text-field h1 .name {
+  margin-bottom: 30px;
+  color: #ffad17;
+}
+.text-field h3 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: 600;
+}
+.text-field p {
+  margin-bottom: 10px;
+}
+a:link {
+  color: #fff;
+  padding: 10px 40px;
+  background: linear-gradient(45deg, #ffa07a, #ff6347);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+}
+a:visited {
+  color: #fff;
+}
+.image-field {
+  height: 525px;
+}
+/* Dream Section =========================================================*/
+
+.dream {
+  background: url(../img/dream-bg.png) no-repeat right 60%;
+}
+.dream-banner {
+  gap: 50px;
+}
+.d-t {
+  margin-top: 20px;
+}
+.d-t h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+/* Experient Section ================================================= */
+.experience {
+  background: url(../img/exp-bg.png) no-repeat left 75%;
+}
+.experience-h2 {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 7%;
+}
+.experience-banner {
+  display: flex;
+  gap: 30px;
+}
+.experience-t-f {
+  padding: 30px 25px 100px 25px;
+  border-left: 7px solid #ff6347;
+  box-shadow: 0px 0px 10px #00000052;
+}
+.experience-t-f h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.experience-t-f h3 {
+  color: #ffa500;
+}
+footer {
+  text-align: center;
+  margin-bottom: 15px;
+}
