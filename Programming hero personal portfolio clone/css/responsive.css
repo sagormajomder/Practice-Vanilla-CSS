@@ -1,0 +1,80 @@
+@media screen and (max-width: 1250px) {
+  .text-field {
+    margin-top: 50px;
+  }
+  .text-field h1 {
+    font-size: 2.5rem;
+  }
+  .d-t {
+    padding-left: 3vw;
+  }
+  .d-t h2,
+  .experience-t-f h2 {
+    font-size: 2rem;
+  }
+  .experience-h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .text-field,
+  .image-field {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+  .image-field {
+    padding-top: 4vh;
+    text-align: center;
+  }
+  .d-i {
+    padding-bottom: 4vh;
+  }
+  .text-field h1 {
+    font-size: 2rem;
+  }
+  .d-t h2,
+  .experience-t-f h2 {
+    font-size: 1.7rem;
+  }
+  .experience-h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container {
+    width: 95vw;
+  }
+  .top-banner,
+  .dream-banner {
+    flex-wrap: wrap;
+  }
+  .text-field,
+  .image-field {
+    flex: 1 1 100%;
+  }
+  .experience-banner {
+    flex-direction: column;
+  }
+  .client-container {
+    padding: 0;
+  }
+  .client-intro {
+    padding: 0;
+  }
+  .clinet-info {
+    min-width: 60vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text-field h1 {
+    font-size: 1.8rem;
+  }
+  .d-t h2,
+  .experience-t-f h2 {
+    font-size: 1.5rem;
+  }
+  .experience-h2 {
+    font-size: 1.8rem;
+  }
+}

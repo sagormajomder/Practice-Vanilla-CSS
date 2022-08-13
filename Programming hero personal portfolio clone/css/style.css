@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #696969;
+}
+a:link {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+section {
+  margin-bottom: 150px;
+}
+.container {
+  width: 85vw;
+  margin: auto;
+}
+/* Introduction Section ==================================================== */
+.introduction {
+  background: url("../img/header-bg.png") 73% 62% / 97% no-repeat;
+}
+.top-banner,
+.dream-banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-banner {
+  margin-top: 80px;
+}
+.text-field,
+.image-field {
+  flex: 1 1 40%;
+  padding: 0 8vw;
+}
+
+.text-field {
+  margin-top: 100px;
+  padding-right: 0;
+}
+.text-field h1 {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 700;
+}
+.text-field span {
+  display: inline-block;
+}
+.text-field h1 .we {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.text-field h1 .name {
+  margin-bottom: 30px;
+  color: #b9005b;
+}
+/* .text-field h3 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: 600;
+} */
+.text-field p {
+  margin-bottom: 20px;
+}
+a:link {
+  color: #fff;
+  padding: 10px 40px;
+  background: linear-gradient(45deg, #ffa07a, #ff6347);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+}
+a:visited {
+  color: #fff;
+}
+.image-field {
+  padding-left: 0;
+  height: 525px;
+}
+
+/* Dream Section =========================================================*/
+
+.dream {
+  padding: 8vw 0;
+  background: url(../img/biography-bg.png) no-repeat;
+  background-size: cover;
+}
+.dream-banner {
+}
+.d-i {
+  padding-right: 0;
+  padding-left: 8vw;
+}
+.d-t {
+  margin-top: 150px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.d-t h2,
+.experience-h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+/* Experient Section ================================================= */
+.experience {
+  background: url(../img/latest-work-bg.png) no-repeat;
+  margin-bottom: 0;
+}
+.experience-h2 {
+  text-align: center;
+}
+.experience-banner {
+  display: flex;
+  gap: 30px;
+}
+.experience-t-f {
+  padding: 30px 25px 100px 25px;
+}
+.experience-t-f h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.experience-t-f h3 {
+  color: #ffa500;
+}
+/* Client Intro */
+.client {
+  background: url(../img/footer-bg.png) no-repeat;
+  background-size: 80%;
+  background-position: 48% 52%;
+  padding: 8vw 0;
+}
+.client-container {
+  padding: 0 8vw;
+}
+.client-intro {
+  text-align: center;
+  padding: 0 8vw;
+}
+.client-h2 {
+  margin-bottom: 80px;
+}
+.client-intro h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+.client-intro h5 {
+  margin-bottom: 30px;
+  color: #8a8888;
+  font-weight: 500;
+}
+q {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 2;
+  padding: 0 10vw;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.clinet-info {
+  padding: 2vw;
+  border-radius: 5px;
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    60deg,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    60deg,
+    #fc6767,
+    #ec008c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+  width: 39vw;
+  margin: auto;
+  text-align: center;
+}
+
+.clinet-info small {
+  margin-bottom: 17px;
+  display: inline-block;
+}
+.clinet-info p {
+  font-size: 1.3rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 15px;
+}
