@@ -1,0 +1,211 @@
+/* /////////////// */
+/*  Header        */
+/* /////////////// */
+.header {
+   height: 11.6rem;
+   background-color: var(--color-bg);
+   padding: 3.2rem 0;
+
+   position: relative;
+}
+.header--container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.header__logo {
+   height: 5.2rem;
+}
+.main-menu {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+.main-menu__link:link,
+.main-menu__link:visited {
+   font-size: var(--p);
+   color: var(--color-black);
+   transition: all 0.3s;
+}
+.main-menu__link:hover,
+.main-menu__link:active {
+   color: var(--color-primary);
+}
+
+.main-menu__link--cta:link,
+.main-menu__link--cta:visited {
+   padding: 1rem 2rem;
+   color: var(--color-white);
+   background-color: var(--color-primary);
+   border-radius: 100px;
+}
+.main-menu__link--cta:hover,
+.main-menu__link--cta:active {
+   background-color: var(--color-primary-shade);
+}
+/* Mobile Navigation */
+.btn-nav-mobile {
+   border: none;
+   background: none;
+   cursor: pointer;
+   display: none;
+}
+.nav-mobile-icon {
+   color: #000;
+   font-size: 3.6rem;
+}
+.nav-mobile-icon[name="close-outline"] {
+   display: none;
+}
+/* Sticky Menu */
+.sticky .header {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 100vw;
+   padding: 0 0;
+   height: 7.4rem;
+
+   background-color: rgba(255, 255, 255, 0.95);
+   z-index: 1000;
+   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.07);
+}
+.sticky .hero-section {
+   margin-top: 11.6rem;
+}
+/* /////////////// */
+/*  Hero Section        */
+/* /////////////// */
+.hero-section {
+   padding: 4.8rem 0 6.4rem 0;
+   background-color: var(--color-bg);
+}
+.hero-section__text {
+   max-width: 48rem;
+}
+.hero-section__text .subheading {
+   color: var(--color-unique);
+}
+.primary-heading span {
+   color: var(--color-primary);
+}
+
+/* /////////////// */
+/*  Features Section        */
+/* /////////////// */
+.features-section {
+   padding: 6.4rem 0;
+}
+/* .features-section__container {
+   column-gap: 6.4rem;
+} */
+.feature {
+   background-color: var(--color-bg-secondary);
+   padding: 3.2rem 1.6rem;
+   border-radius: 11px;
+}
+.feature--cta {
+   background-color: var(--color-white);
+   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
+}
+.feature__img {
+   height: 7.4rem;
+}
+/* /////////////// */
+/*  Course Section        */
+/* /////////////// */
+.course-section {
+   padding: 6.4rem 0;
+}
+.course-section h2 {
+   color: var(--color-secondary);
+}
+.course {
+   padding: 2.4rem;
+   box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.1);
+   border-radius: 11px;
+   transition: all 0.4s;
+}
+
+.course:hover {
+   transform: translateY(-1.2rem);
+   box-shadow: 0 2.4rem 8.8rem rgba(0, 0, 0, 0.19);
+   border-radius: 11px;
+}
+
+.course--info {
+   display: flex;
+   justify-content: space-between;
+}
+.start,
+.seat {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+.start__img,
+.seat__img {
+   height: 2rem;
+}
+
+/* /////////////// */
+/*  Testimonial Section        */
+/* /////////////// */
+.testimonial-section {
+   padding: 6.4rem 0;
+}
+.testimonial-section h2 {
+   color: var(--color-secondary);
+}
+.testimonial-section--content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 60%;
+   margin: 0 auto;
+   gap: 4.8rem;
+}
+.testimonial-section--img {
+   height: 15rem;
+   justify-self: end;
+}
+/* /////////////// */
+/*  footer Section        */
+/* /////////////// */
+.footer-section {
+   padding: 6.4rem 0 1.6rem 0;
+   background-color: var(--color-bg-footer);
+}
+.footer-container {
+   display: grid;
+   column-gap: 6.4rem;
+   row-gap: 3.2rem;
+   grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer__heading {
+   font-size: var(--h5);
+   font-weight: var(--semiBold);
+}
+.footer__link:link,
+.footer__link:visited,
+.footer__heading,
+.footer__text {
+   color: var(--color-white);
+   display: block;
+   transition: all 0.3s;
+}
+.footer__link:hover,
+.footer__link:active {
+   color: var(--color-primary);
+}
+.footer-copywright {
+   color: var(--color-tertiary);
+   margin-top: 4.8rem;
+   font-size: 1.2rem;
+   transition: all 0.3s;
+}
+.footer-copywright:hover {
+   color: var(--color-white);
+}

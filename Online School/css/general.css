@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+   /* font family */
+   --main-Font: "Poppins", sans-serif;
+
+   /* color */
+   --color-primary: #21b573;
+   --color-primary-tint: #4dc48f;
+   --color-primary-shade: #1ea368;
+   --color-secondary: #413960;
+   --color-tertiary: #585859;
+   --color-unique: #fd511a;
+   --color-bg: #f0fff0;
+   --color-bg-secondary: #f8fffb;
+   --color-bg-footer: #282531;
+   --color-white: #fff;
+   --color-black: #000;
+
+   /* font Size */
+   --h1: 4.4rem;
+   --h2: 3.6rem;
+   --h3: 3rem;
+   --h4: 2.4rem;
+   --h5: 2rem;
+   --h6: 1.8rem;
+   --sub-heading: 1.8rem;
+
+   --p: 1.6rem;
+
+   --line-height: 1.5;
+
+   /* font wight */
+   --normal: 400;
+   --mediam: 500;
+   --semiBold: 600;
+   --bold: 700;
+}
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+body {
+   font-family: var(--main-Font);
+   line-height: var(--line-height);
+   font-weight: var(--normal);
+   color: var(--color-tertiary);
+   box-sizing: border-box;
+   font-size: var(--p);
+   overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+   display: inline-block;
+}
+
+img {
+   max-width: 100%;
+}
+
+/* Laysout System */
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+   padding: 0 3.2rem;
+}
+.grid {
+   display: grid;
+   row-gap: 9.6rem;
+   column-gap: 4.8rem;
+}
+.grid:not(:last-child) {
+   margin-bottom: 9.6rem;
+}
+.grid--2--cols {
+   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+   grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+   grid-template-columns: repeat(4, 1fr);
+}
+.grid--center-v {
+   align-items: center;
+}
+
+/* COMMON Class */
+.subheading {
+   display: block;
+   font-size: var(--p);
+}
+.primary-heading {
+   font-size: var(--h1);
+   color: var(--color-black);
+   line-height: 1.4;
+}
+.secondary-heading {
+   font-size: var(--h2);
+   font-weight: var(--bold);
+}
+.tertiary-heading {
+   font-size: var(--h4);
+   font-weight: var(--mediam);
+   color: var(--color-secondary);
+}
+.btn:link,
+.btn:visited {
+   padding: 1rem 2rem;
+   color: var(--color-white);
+   background-color: var(--color-primary);
+   border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+   background-color: var(--color-primary-shade);
+}
+/* HElping Class */
+.text-center {
+   text-align: center;
+}
+.margin-bottom-sm {
+   margin-bottom: 1.6rem;
+}
+.margin-bottom-md {
+   margin-bottom: 3.2rem;
+}
