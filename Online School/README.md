@@ -6,7 +6,21 @@ Repository link : [Online School Repository](https://github.com/sagormajomder/on
 
 Live Website link: [Online School Live](https://sagormajomder.github.io/online-school/)
 
-#### Technology used
+## Screensot
+
+#### Desktop
+
+![](./img/screenshot/desktop.jpeg)
+
+#### Tablet
+
+![](./img/screenshot/tablet.jpeg)
+
+#### Mobile
+
+![](./img/screenshot/mobile.jpeg)
+
+### Technology used
 
 -  HTML5
 -  CSS3
