@@ -1,9 +1,0 @@
-@mixin d-flex($j-content, $a-items, $direction) {
-   display: flex;
-   justify-content: $j-content;
-   align-items: $a-items;
-   flex-direction: $direction;
-}
-@mixin font-weights($weights) {
-   font-weight: map-get($base-size, $weights);
-}
