@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Element Practise 2</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+      }
+      .container {
+        background-color: #fff;
+        padding: 2vh;
+      }
+      h3 {
+        margin-bottom: 50px;
+      }
+      .main-topic h6 {
+        font-weight: normal;
+        font-family: sans-serif;
+        margin-bottom: 5px;
+      }
+      .main-topic h6:first-child {
+        margin-bottom: -10px;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        line-height: 0.9;
+      }
+      div {
+        display: inline-block;
+      }
+      .halka {
+        position: relative;
+        width: 200px;
+        height: auto;
+        top: 9px;
+      }
+      .par {
+        background-color: rgba(21, 226, 226, 0.274);
+        clip-path: polygon(0 18px, 100% 18px, 100% 108%, 0 101%);
+        width: 184px;
+        height: 45px;
+      }
+      .child {
+        position: absolute;
+        top: 4px;
+        left: 0;
+      }
+      span {
+        position: relative;
+        top: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h3>Build.</h3>
+      </header>
+      <main class="main-topic">
+        <h6>Have a unique work process?</h6>
+        <h1>
+          <span>Create</span> <br />
+          a
+          <div class="halka">
+            <div class="par"></div>
+            <div class="child">custom app</div>
+          </div>
+          <br />
+          in minutes.
+        </h1>
+        <h6>Fiberly provides freedom for curious lego-lovers.</h6>
+      </main>
+    </section>
+  </body>
+</html>

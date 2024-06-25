@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 24px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 300px 1fr 200px;
+  grid-template-rows: 80px 1fr;
+}
+nav,
+menu,
+section,
+main,
+aside {
+  padding: 10px;
+}
+nav {
+  grid-row: 1/-1;
+  background-color: rgb(51, 50, 50);
+  color: #fff;
+}
+menu {
+  grid-column: 2/-1;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+button {
+  border: 0;
+  padding: 10px 20px;
+  background-color: green;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.menu-btn:last-child {
+  background-color: violet;
+  margin-left: auto;
+}
+section {
+  background-color: #ddd;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.inbox-btn {
+  background-color: yellowgreen;
+  /* flex-shrink: 0; */
+  padding: 30px;
+}
+main {
+  background-color: orange;
+}
+aside {
+  background-color: gray;
+}

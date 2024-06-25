@@ -1,0 +1,14 @@
+{
+   "name": "customer-review-section-1",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.html",
+   "scripts": {
+      "sass": "sass ./sass/main.scss ./css/style.css -w"
+   },
+   "author": "Sagor Majomder",
+   "license": "ISC",
+   "devDependencies": {
+      "sass": "^1.57.1"
+   }
+}

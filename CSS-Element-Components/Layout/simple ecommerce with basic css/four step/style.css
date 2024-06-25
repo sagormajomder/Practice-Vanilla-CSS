@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+img {
+  margin-right: 40px;
+  float: left;
+}
+
+/* PRODUCT INFORMATION */
+.boxes {
+  width: calc(100% - 250px - 8px - 40px);
+  float: left;
+}
+.box {
+  float: left;
+  width: calc(100% / 2 - 40px);
+  margin-right: 40px;
+  padding-top: 20px;
+}
+.box:last-child {
+  margin-right: 0;
+}
+.clear-fix::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+.prices {
+  text-align: center;
+}
+.price {
+  font-size: 24px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  margin-top: 9px;
+  float: right;
+}
+.sale {
+  font-size: 12px;
+  padding: 7px 15px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+p.sell-p {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+/* color blocks */
+.color {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.color--red {
+  background-color: red;
+}
+.color--black {
+  background-color: black;
+}
+.color--blue {
+  background-color: blue;
+}
+.color--yellow {
+  background-color: yellow;
+}
+.color--green {
+  background-color: green;
+}
+.color--chocolate {
+  background-color: chocolate;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}

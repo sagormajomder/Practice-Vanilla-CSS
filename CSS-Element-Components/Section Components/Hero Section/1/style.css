@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 20px 30px;
+  border-radius: 8px;
+  background: #f08c00;
+}
+a:hover,
+a:active {
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+/* Custom CSS */
+.container {
+  background: linear-gradient(rgba(80, 80, 80, 0.61), rgba(80, 80, 80, 0.61)),
+    url(./img/hero.jpg);
+  background-size: cover;
+  padding: 100px 100px 0;
+  color: #fff;
+  height: 100vh;
+  /*  */
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+.main-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 600px;
+}
+.main-content h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.main-content p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.second-container {
+  background: none;
+  color: #444;
+  height: fit-content;
+}
+.second-container h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.second-container p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}

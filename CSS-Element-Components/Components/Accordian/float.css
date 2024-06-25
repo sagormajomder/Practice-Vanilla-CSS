@@ -1,0 +1,80 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  color: #777;
+  line-height: 1.4;
+}
+a:link {
+  text-decoration: none;
+  display: inline-block;
+}
+.container {
+  width: 45%;
+  margin: 100px auto;
+}
+.item {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.open {
+  border-top: 5px solid #4641b4;
+}
+.icon {
+  width: 25px;
+}
+.icon1 {
+  margin-top: 5px;
+}
+.hidden {
+  width: 80%;
+  color: #000;
+}
+.title,
+.number {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.description {
+  margin-bottom: 20px;
+  color: #000;
+}
+.hidden ul {
+  margin-left: 22px;
+}
+.best-hidden {
+  display: none;
+}
+.open .best-hidden {
+  margin-top: 20px;
+  display: block;
+}
+.open .number,
+.open .hidden .title,
+.open .icon {
+  color: #4641b4;
+}

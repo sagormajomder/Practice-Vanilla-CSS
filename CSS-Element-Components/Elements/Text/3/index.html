@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background-clip</title>
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+    html {
+      font-family: sans-serif;
+      color: #555;
+      line-height: 1;
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+    .heading {
+      text-align: center;
+      font-size: 4rem;
+      font-family: sans-serif;
+      background-image: linear-gradient(to right, #51cf66, #087f5b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent;
+    }
+  </style>
+  <body>
+    <h2 class="heading">This is a simple text</h2>
+  </body>
+</html>

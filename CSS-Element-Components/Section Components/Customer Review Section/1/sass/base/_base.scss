@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+}
+body {
+   box-sizing: border-box;
+   min-height: 100vh;
+   overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+   display: inline-block;
+}
+
+img,
+picture,
+svg,
+video {
+   display: block;
+   max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+   font: inherit;
+}
+
+.row {
+   max-width: 120rem;
+   margin: 0 auto;
+   &:not(:last-child) {
+      margin-bottom: 8rem;
+   }
+}

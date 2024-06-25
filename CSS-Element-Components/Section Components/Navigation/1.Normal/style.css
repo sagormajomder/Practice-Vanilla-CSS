@@ -1,0 +1,83 @@
+/* Default CSs */
+:root {
+   --primaryColor: #e74c3c;
+   --secondaryColor: #e67e22;
+   --bodyColor: #2c3e50;
+}
+html,
+body {
+   font-size: 1.2rem;
+   background: var(--bodyColor);
+   color: white;
+   overflow: hidden;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+   color: white;
+}
+.fixed-width {
+   max-width: 1080px;
+}
+header,
+main {
+   margin: 50px auto;
+}
+header h1 {
+   text-align: center;
+   margin-bottom: 10px;
+}
+/* Menu Style CSS */
+ul {
+   background-image: linear-gradient(
+      to right,
+      var(--primaryColor),
+      var(--secondaryColor)
+   );
+   list-style: none;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   text-transform: uppercase;
+   border-radius: 8px;
+}
+ul li {
+   transition: 0.5s;
+}
+ul li a {
+   display: block;
+   height: 80px;
+   line-height: 80px;
+   padding: 0 20px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+ul li:hover {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+/* Responsive */
+@media screen and (max-width: 500px) {
+   .fixed-width {
+      max-width: fit-content;
+   }
+   ul {
+      flex-direction: column;
+   }
+   ul li {
+      text-align: center;
+      width: 100%;
+   }
+   ul li:first-child:hover {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+   }
+   ul li:last-child:hover {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+   }
+}

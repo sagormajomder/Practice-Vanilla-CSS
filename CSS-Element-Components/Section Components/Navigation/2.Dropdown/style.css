@@ -1,0 +1,121 @@
+/* Default CSs */
+:root {
+   --primaryColor: #e74c3c;
+   --secondaryColor: #e67e22;
+   --bodyColor: #2c3e50;
+}
+html,
+body {
+   width: 100vw;
+   height: 130vh;
+   font-size: 1rem;
+   background: var(--bodyColor);
+   color: white;
+   overflow-x: hidden;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+   color: white;
+}
+.fixed-width {
+   max-width: 1080px;
+}
+header,
+main {
+   margin: 50px auto;
+}
+header h1 {
+   text-align: center;
+   margin-bottom: 10px;
+}
+/* Menu Style CSS */
+ul {
+   background-image: linear-gradient(
+      to right,
+      var(--primaryColor),
+      var(--secondaryColor)
+   );
+   list-style: none;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   text-transform: uppercase;
+   border-radius: 8px;
+}
+.fa-solid {
+   margin-left: 5px;
+}
+ul li a {
+   display: block;
+   height: 60px;
+   line-height: 60px;
+   padding: 0 20px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: 0.5s;
+   font-size: 1.1rem;
+}
+
+ul li:hover > a {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+/* dropdown style */
+ul li {
+   position: relative;
+}
+ul li ul {
+   background-image: none;
+   background-color: #fff;
+   flex-flow: column nowrap;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: max-content;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.5s;
+   transform: scaleY(0);
+   transform-origin: top center;
+   box-shadow: 0px 0px 15px rgba(2, 2, 2, 0.164);
+   border-radius: 0;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   text-transform: none;
+}
+ul li ul li a {
+   color: black;
+}
+ul li:hover .dropdown-content {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1);
+}
+.dropdown-content li:hover > a {
+   background-color: #e74c3c;
+   color: white;
+}
+.dropdown-content li:last-child:hover > a {
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+/* Inner Dropdown Style */
+.inner-dropdown-content {
+   top: 0;
+   left: 103%;
+   border-radius: 8px;
+}
+.inner-dropdown:hover .inner-dropdown-content {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1);
+}
+
+.inner-dropdown-content li:first-child:hover > a {
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}

@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+}
+body {
+   font-family: "Rubik", sans-serif;
+   line-height: 1;
+   font-weight: 400;
+   color: #fff;
+   box-sizing: border-box;
+   font-size: 4.4rem;
+}
+.container {
+   /* main tricks */
+   max-width: 90vw;
+   margin: 0 auto;
+}
+.start-container::after {
+   content: "";
+   display: block;
+   height: 1px;
+   background-color: black;
+   width: 61.2%;
+}
+.home-container,
+.last-container {
+   width: 50vw;
+}
+.start-p {
+   padding: 3.2rem 0;
+   color: black;
+   font-size: 1.6rem;
+}
+.middle {
+   display: grid;
+   grid-template-columns: 60fr 40fr;
+}
+div {
+   width: 100%;
+}
+/* Custom CSS */
+.img-box {
+   grid-row: span 2;
+   margin-top: -1px;
+}
+/* main tricks */
+.img-box {
+   background-image: url(../img/alireza-esmaeeli-w-y3MIJ9tqU-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+.last {
+   background-color: black;
+}
+.last-p {
+   color: #fff;
+   font-size: 1.6rem;
+   padding: 3.2rem 0;
+}
+footer p {
+   text-align: center;
+   padding: 3.2rem;
+   font-size: 1.4rem;
+   color: #333;
+   background-color: #ddd;
+}

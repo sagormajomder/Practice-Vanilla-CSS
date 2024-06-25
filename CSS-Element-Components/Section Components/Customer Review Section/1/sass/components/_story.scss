@@ -1,0 +1,66 @@
+.story {
+   width: 80%;
+   margin: 0 auto;
+   padding: 6rem;
+   padding-left: 9rem;
+   background-color: $color-white;
+   box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
+   border-radius: 5px;
+
+   @include clearfix;
+
+   transform: skewX(-7deg);
+
+   &__shape {
+      width: 15rem;
+      height: 15rem;
+      float: left;
+
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+
+      transform: translateX(-3rem) skewX(7deg);
+
+      position: relative;
+   }
+   &__caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 30%);
+
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: $default-font-size;
+      text-align: center;
+      opacity: 0;
+
+      transition: all 0.5s;
+   }
+
+   &:hover &__caption {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+   }
+   &__image {
+      max-width: unset;
+      max-height: 100%;
+      transform: scale(1.4) translateX(-3rem);
+      transition: all 0.5s;
+   }
+
+   &:hover &__image {
+      filter: blur(0.3rem) brightness(80%);
+      transform: scale(1) translateX(-3.5rem);
+   }
+   &__details {
+      transform: skewX(7deg);
+   }
+   &__text {
+      font-size: $default-font-size;
+      line-height: 1.7;
+   }
+}

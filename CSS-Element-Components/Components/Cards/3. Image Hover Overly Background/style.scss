@@ -1,0 +1,142 @@
+// Variable
+$color-white: white;
+$bg-card-footer1: tomato;
+$bg-card-footer2: #f39c12;
+$bg-card-footer3: #2ecc71;
+// mixins
+@mixin d-flex($j-content, $a-content, $row) {
+   display: flex;
+   justify-content: $j-content;
+   align-items: $a-content;
+   flex-direction: $row;
+}
+// Extends
+.body-gradient {
+   background-image: linear-gradient(
+      109.6deg,
+      rgba(45, 116, 213, 1) 11.2%,
+      rgba(121, 137, 212, 1) 91.2%
+   );
+}
+.gradient1 {
+   background-color: #ffe53b;
+   background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+.gradient2 {
+   background-color: #fbda61;
+   background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+.gradient3 {
+   background-color: #08aeea;
+   background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   @include d-flex(center, center, row);
+   flex-wrap: wrap;
+   width: 100vw;
+   height: 110vh;
+   overflow-x: hidden;
+   @extend .body-gradient;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+h1 {
+   margin-top: 20px;
+   text-align: center;
+   color: $color-white;
+}
+#cards {
+   width: 90%;
+   margin: 30px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   .card {
+      margin: 30px 0;
+      background-color: $color-white;
+      border-radius: 10px;
+      width: 280px;
+      .img-div {
+         width: 100%;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         img {
+            display: block;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: 0.2s linear;
+         }
+      }
+      .img-div1 {
+         @extend .gradient1;
+      }
+      .img-div2 {
+         @extend .gradient2;
+      }
+      .img-div3 {
+         @extend .gradient3;
+      }
+      &:hover {
+         .img-div img {
+            opacity: 0.5;
+         }
+      }
+   }
+   .card-title {
+      margin: 20px 0px;
+      padding: 10px;
+      h2 {
+         margin-bottom: 10px;
+         text-align: center;
+         font-size: 35px;
+      }
+      p {
+         text-align: center;
+         color: gray;
+      }
+   }
+}
+.card-footer {
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.card-footer-1 {
+   background-color: $bg-card-footer1;
+}
+.card-footer-2 {
+   background-color: $bg-card-footer2;
+}
+.card-footer-3 {
+   background-color: $bg-card-footer3;
+}
+.card-inner-footer {
+   padding: 10px;
+   color: $color-white;
+   @include d-flex(space-between, center, row);
+   .l-img {
+      width: 45%;
+      @include d-flex(center, center, row);
+      img {
+         width: 30px;
+         margin-right: 5px;
+      }
+      p {
+         font-size: 14px;
+      }
+   }
+   .comments {
+      width: 50%;
+      @include d-flex(space-evenly, center, row);
+      font-weight: normal;
+      font-size: 14px;
+   }
+}

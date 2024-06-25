@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+figure {
+  display: inline-block;
+}
+.bat {
+  width: 300px;
+  transform-origin: top right;
+  transition: 1s ease;
+}
+.ball {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  z-index: 999;
+  transition: 1s ease;
+}
+article {
+  width: max-content;
+  height: max-content;
+}
+article:hover .bat {
+  transform: rotate(-60deg);
+}
+article:hover .ball {
+  top: 30%;
+  left: 90%;
+  transition: 1s ease 1s;
+}

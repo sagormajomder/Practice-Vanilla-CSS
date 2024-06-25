@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+body {
+   font-family: "Inter", sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+   color: #333;
+
+   box-sizing: border-box;
+   overflow-x: hidden;
+}
+
+img {
+   max-width: 100%;
+}
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+}
+.gradient {
+   background-image: linear-gradient(90deg, transparent 50%, #fff 50%);
+   padding: 4.8rem;
+}
+.grid {
+   display: grid;
+   grid-template-columns: 60fr 40fr;
+   align-items: center;
+}
+
+/* Custome CSS */
+.section-project {
+   background-color: #ddd;
+   padding: 10rem 3.2rem;
+}
+.container__overlay {
+   padding: 10rem 6.4rem;
+
+   background-image: linear-gradient(
+         45deg,
+         rgba(18, 184, 134, 0.815) 50%,
+         rgba(130, 201, 30, 0.733)
+      ),
+      url("./img/pexels-djordje-petrovic-2102415.jpg");
+   background-size: cover;
+   background-position: center 55%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 8rem;
+
+   color: #fff;
+   min-height: 80%;
+}
+.overlay__heading {
+   font-size: 7.4rem;
+   text-align: center;
+   margin-bottom: -2.4rem;
+}
+.overlay_para {
+   font-size: 2.4rem;
+   text-align: center;
+}
+.show-box {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+}
+.overlay__show-box {
+   display: flex;
+   flex-direction: column;
+   width: 48%;
+   padding: 0 1.2rem;
+}
+.b-right {
+   border-right: 5px solid #fff;
+}
+.show-box__sub-heading {
+   font-size: 3.6rem;
+   font-weight: 600;
+   margin-bottom: -0.8rem;
+}
+.j-end {
+   width: fit-content;
+}
+.show-box__text {
+   font-size: 1.8rem;
+}
+
+.container__text-box {
+   padding: 6rem 2.4rem 6rem 3.2rem;
+   background-color: #fff;
+}
+.text-box__heading {
+   font-size: 3.6rem;
+   margin-bottom: 2.4rem;
+   line-height: 1.2;
+}
+.text-box__para {
+   font-size: 1.8rem;
+   margin-bottom: 2rem;
+   line-height: 1.7;
+}
+.text-box__list {
+   font-size: 1.8rem;
+   list-style: inside;
+}
+/* Responsive */
+/* ****************** */
+/* 1248px */
+/* ****************** */
+
+@media (max-width: 78em) {
+   .container {
+      max-width: 114.4rem;
+   }
+   .gradient {
+      padding: 3.2rem;
+   }
+}
+/* ****************** */
+/* 1056px */
+/* ****************** */
+@media (max-width: 66em) {
+   html {
+      font-size: 56.25%;
+   }
+   .container__overlay {
+      gap: 12.8rem;
+   }
+}
+/* ****************** */
+/* 864px */
+/* ****************** */
+@media (max-width: 54em) {
+   html {
+      font-size: 50%;
+   }
+   .container__overlay {
+      padding: 1.2rem;
+      gap: 7.4rem;
+   }
+   .text-box__heading {
+      font-size: 3.6rem;
+   }
+}
+/* ****************** */
+/* 576px */
+/* ****************** */
+@media (max-width: 36em) {
+   .grid {
+      grid-template-columns: 1fr;
+   }
+   .gradient {
+      background-image: none;
+      padding: 0;
+   }
+   .container__overlay {
+      padding: 6.4rem 3.2rem;
+   }
+   .overlay__heading {
+      font-size: 5.2rem;
+      margin-bottom: -1.2rem;
+   }
+   .overlay_para {
+      font-size: 1.8rem;
+   }
+   .show-box {
+      justify-content: space-between;
+   }
+   .show-box__sub-heading {
+      font-size: 2.4rem;
+      margin-bottom: 0;
+   }
+   .show-box__text {
+      font-size: 1.6rem;
+      line-height: 1.2;
+   }
+   .container__text-box {
+      padding: 6.4rem 3.2rem;
+   }
+   .overlay__show-box {
+      width: 50%;
+   }
+   .j-end {
+      width: fit-content;
+      width: -moz-fit-content;
+   }
+}
+/* ****************** */
+/* 336px */
+/* ****************** */
+@media (max-width: 21em) {
+   .section-project,
+   .container__overlay,
+   .container__text-box {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+   }
+}
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

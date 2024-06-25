@@ -1,0 +1,159 @@
+.header-gradient, header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#dd2476), to(#ff512f));
+  background: linear-gradient(to right, #dd2476, #ff512f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.main-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .logo {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.main-header .logo h1 {
+  color: white;
+}
+
+.main-header nav {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.main-menu li {
+  margin: 10px 0;
+}
+
+.main-menu li a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.main-menu li a::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main-menu li:hover > a::after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .click-nav-gradient, #check:checked ~ .main-menu {
+    background: #3ca55c;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#b5ac49), to(#3ca55c));
+    background: linear-gradient(to right, #b5ac49, #3ca55c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .main-header .logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  nav .main-menu {
+    position: absolute;
+    left: -1200px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .container {
+    max-width: 100%;
+  }
+  #check:checked ~ .main-menu {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    top: 100%;
+  }
+}

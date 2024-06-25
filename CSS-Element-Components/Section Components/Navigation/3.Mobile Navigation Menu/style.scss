@@ -1,0 +1,146 @@
+// Variables
+$color_logo: white;
+$color_menu: white;
+$bg_menu_bar: white;
+$color_responsive_bar: white;
+// Extend
+.header-gradient {
+   background: #ff512f; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      to right,
+      #dd2476,
+      #ff512f
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to right,
+      #dd2476,
+      #ff512f
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+// mixins
+@mixin d-flex($j_content, $a_items) {
+   display: flex;
+   justify-content: $j_content;
+   align-items: $a_items;
+}
+// reset
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+}
+a {
+   text-decoration: none;
+}
+img {
+   max-width: 100%;
+}
+// CSS Header
+header {
+   @extend .header-gradient;
+}
+.container {
+   max-width: 90%;
+   margin: auto;
+}
+.main-header {
+   position: relative;
+   @include d-flex(center, center);
+   .logo {
+      flex-basis: 30%;
+      h1 {
+         color: $color_logo;
+      }
+   }
+   nav {
+      flex-basis: 70%;
+   }
+}
+.main-menu {
+   @include d-flex(space-evenly, center);
+   flex-wrap: wrap;
+   list-style: none;
+   li {
+      margin: 10px 0;
+      a {
+         display: block;
+         padding: 20px;
+         font-size: 20px;
+         color: $color_menu;
+         font-weight: bold;
+         &::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 3px;
+            visibility: hidden;
+            opacity: 0;
+            background-color: $bg_menu_bar;
+            transition: 0.3s ease;
+         }
+      }
+      &:hover > a::after {
+         width: 100%;
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+}
+#check {
+   display: none;
+}
+.checkbtn {
+   position: absolute;
+   color: $color_responsive_bar;
+   font-size: 30px;
+   top: 50%;
+   right: 10%;
+   transform: translateY(-50%);
+   display: none;
+}
+// Responsive
+@media screen and (max-width: 900px) {
+   // extend
+   .click-nav-gradient {
+      background: #3ca55c; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+         to right,
+         #b5ac49,
+         #3ca55c
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+         to right,
+         #b5ac49,
+         #3ca55c
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+   .main-header .logo {
+      flex-basis: 100%;
+      padding: 20px 0;
+      text-align: center;
+   }
+   nav .main-menu {
+      position: absolute;
+      left: -1200px;
+   }
+   .checkbtn {
+      display: block;
+   }
+   .container {
+      max-width: 100%;
+   }
+   #check:checked ~ .main-menu {
+      width: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 100%;
+      @extend .click-nav-gradient;
+   }
+}
